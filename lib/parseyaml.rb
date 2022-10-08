@@ -10,11 +10,10 @@ module Getapp
   class Parseyaml < Thor
     attr_accessor :common
 
-    def initialize(common: Common.new)
-      @common = common
-    end
-
+    desc "capterra", "read url from yaml"
+    option :url, :type => :string, :required => true
     def capterra(url)
+      common = Common.new
       puts "Read from yaml url: #{url}"
       data = YAML.load_file url
       data.each do |row|

@@ -1,3 +1,24 @@
+# Dev Help - Author Chitresh Goyal
+
+## How to build gem?
+After enhancement or updation in code just run:
+$ bundle exec exe/getapp
+$ make install
+
+## How to run code?
+```for CSV file
+$ getapp read <url:string> <is_header:boolean>
+$ getapp read "feed-products/newwebsite.csv" true
+```
+```for json file
+$ getapp softwareadvice <url:string>
+$ getapp softwareadvice "feed-products/softwareadvice.json"
+```
+```for yaml file
+$ getapp capterra <url:string>
+$ getapp capterra "feed-products/capterra.yaml"
+```
+
 # Getapp
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/getapp`. To experiment with that code, run `bin/console` for an interactive prompt.
