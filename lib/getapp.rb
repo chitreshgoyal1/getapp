@@ -2,7 +2,8 @@
 
 require_relative "getapp/version"
 
+require 'thor'
+
 module Getapp
   class Error < StandardError; end
-  # Your code goes here...
 end

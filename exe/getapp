@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
 
 require "getapp"
+require "parsecsv"
+require "parsejson"
+require "parseyaml"
+
+Getapp::Parsecsv.start(ARGV)
+Getapp::Parsejson.start(ARGV)
+Getapp::Parseyaml.start(ARGV)
